@@ -1,0 +1,18 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.widget_base_dimensions = [370, 340]
+  Dashing.numColumns = 1
+  Dashing.gridsterLayout('[{"col":1,"row":1}]')  
+});
+</script>
+
+
+<% content_for :title do %>Now Playing<% end %>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="countdown" data-view="Number" data-title="Countdown"></div>
+    </li>
+  </ul>
+</div>
